@@ -175,11 +175,11 @@ window.addEventListener('resize', checkViewportRatio);
 // ランダムに画像表示　モーダル２ーーーーーーーーーーーーーーーーーーーー
 document.addEventListener('DOMContentLoaded', () => {
   const images = [
-    '/img/game/1/2.jpg',
-    '/img/game/2/2.jpg',
-    '/img/game/3/2.jpg',
-    '/img/game/4/2.jpg',
-    '/img/game/5/2.jpg'
+    'img/game/1/2.jpg',
+    'img/game/2/2.jpg',
+    'img/game/3/2.jpg',
+    'img/game/4/2.jpg',
+    'img/game/5/2.jpg'
   ];
 
   // ボタンとモーダル、画像要素を取得
