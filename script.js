@@ -31,6 +31,8 @@ function resetAutoPlayInterval() {
   clearInterval(autoPlayInterval);
   startAutoPlay();
 }
+
+
 next.addEventListener('click', () => {
   nextClick();
   resetAutoPlayInterval();
