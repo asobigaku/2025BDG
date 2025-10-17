@@ -13,7 +13,7 @@
 <body>
 
   <div id="warning" class="warning">
-    ロード中…。<br>（スマホサイズでの閲覧を推奨しています）
+    ロード中…<br>（スマホサイズでの閲覧を推奨しています）
   </div>
 
 
@@ -67,7 +67,7 @@
 
 
     <div id="logo">
-      <img class="logo" src="img/logo.png" style="display: block; margin: auto; width: 370px;" >
+      <img class="logo" src="img/logo.png" style="display: block; margin: auto; width: 370px;" />
     </div>
 
     <!-- モーダル　ランダム　button -->
@@ -80,9 +80,9 @@
       <div class="modal-content2">
         <button class="close-btn2" data-modal="7">
         </button>
-        <p class="h2-1">PICK UP!</p>
+        <p class="h2-1">Let's Play!!</p>
         <img id="randomImage" class="randomImage" src="" alt="おすすめゲーム画像" style="max-width: 90%; ">
-        <p class="randomtxt">～今日のおすすめゲーム～<br>遊んでみよう！！</p>
+        <p class="randomtxt">～今日のおすすめゲーム～<br>展示会場で遊んでみてね！</p>
       </div>
     </div>
 
@@ -181,7 +181,7 @@
                 <div class="mox1">
                   <div class="mox2">
                     <p>(@ooooosuga)</p>
-                    <img src="img/x.png" alt="x">
+                    <img src="img/insta.png" alt="x">
                   </div>
               </a>
             </div>
@@ -274,21 +274,21 @@
               <img src="img/game/info/time.jpg" alt="age">
               <div class="info-text">
                 <span class="label">time</span>
-                <span class="value">20<small>min.</small></span>
+                <span class="value">~80<small>min.</small></span>
               </div>
             </div>
             <div class="info-item">
               <img src="img/game/info/age.jpg" alt="time">
               <div class="info-text">
                 <span class="label">age</span>
-                <span class="value">5 +</span>
+                <span class="value">7 +</span>
               </div>
             </div>
             <div class="info-item">
               <img src="img/game/info/players.jpg" alt="player">
               <div class="info-text">
                 <span class="label">player</span>
-                <span class="value">2~6</span>
+                <span class="value">4~7</span>
               </div>
             </div>
           </div>
@@ -308,8 +308,9 @@
         </div>
       </div>
     </div>
+
     <div class="g1">
-      <button class="open-modal open-btn" data-modal="4">
+      <button class="open-modal open-btn" data-modal="-"> <!-- ここを4にする -->
         <img src="img/game/4/2.jpg" alt="TOBI DAY ZOO!">
       </button>
     </div>
@@ -431,8 +432,8 @@
     </div>
   </div>
   <div class="g1">
-    <button class="open-modal open-btn" data-modal="6">
-      <img src="img/game/6/ABOUTus.jpg" alt="ゲーム名">
+    <button class="open-modal open-btn" data-modal="-"><!-- ここを6にする -->
+      <img src="img/game/6/2.jpg" alt="ゲーム名">
     </button>
   </div>
   <div class="modal" id="modal-6">
@@ -552,8 +553,7 @@
         <div class="access1-2">
           <div class="txt3">
             <p class="item">開催日程</p>
-            <p class="txt3-1">2025年10月27日(月)～<br>　11月1日(土)</p>
-            <p class="txt3-1">10:00~17:00</p>
+            <p class="txt3-1">2025年10月27日(月)～<br>　11月1日(土)　10:00~17:00</p>
             <p class="txt3-1">※初日入場10:00～/最終日～16:30<br>となりますので、ご注意ください。</p>
           </div>
           <div class="txt3">
@@ -592,15 +592,15 @@
       <p class="endp1">creative</p>
       <div class="endp2">
         <a class="endp3" href="https://www.instagram.com/ooooosuga" target="_blank">OOSUGA LEO</a><br>
-        <a class="endp3" href="https://x.com/osuberi__" target="_blank">OGAWA TAMAKI</a><br>
+        <a class="endp3" href="https://x.com/osuberi__" target="_blank">TAM</a><br>
         <a class="endp3" href="https://x.com/Kinoko_Bouquet" target="_blank">KONUMA ANNA</a><br>
-        <a class="endp3" href="https://x.com/ymym_gy012" target="_blank">YAMAGUCHI YUUKA</a>
+        <a class="endp3" href="https://x.com/ymym_gy012" target="_blank">𝓨.</a>
       </div>
     </div>
     <div class="end-in">
       <p class="endp1">web creator</p>
       <div class="endp2">
-        <a class="endp3" href="https://x.com/kana_cat__" target="_blank">YAMAGUCHI KANA</a>
+        <a class="endp3" href="https://x.com/kana_cat__" target="_blank">KANA</a>
       </div>
     </div>
     <p class="c">
@@ -617,6 +617,16 @@
       dots: true,
       fade: true,
     });
+
+    $('.slider').slick({
+      dots: true,
+      fade: true,
+      swipe: true,             // スワイプを有効に（デフォルトでtrue）
+      swipeThreshold: 20,      // ← これがスワイプ感度！小さいほど高感度
+      touchThreshold: 5        // ← タッチでのドラッグのしきい値（デフォルトは 5）
+    });
+
+
   </script>
 </body>
 
